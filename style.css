@@ -41,31 +41,27 @@ body {
 }
   
   .section {
-    /* background-image: url(Component\ 1.png);
-    background-repeat: no-repeat;
-    background-position: right; */
-    /* height: 100vh */
-    /* windth;; */
-    
-
-    position: relative;
+    background: url("Component\ 1.png") no-repeat right;
+    height: 110vh;
   }
 
 
   .section2 {
-    padding-left: 230px;
-    padding-top: 500px;
-  }
-  /* .image-holder {
-    position: absolute
-    ;
-  } */
+    position: relative;
+    height: 105vh;
 
-  .image {
+    /* background: url("undraw_mobile_login_ikmv.jpg") no-repeat;
+    background-position: 735px 1220px;
+    height: 105vh; */
+  }
+  
+  .img-bg {
     position: absolute;
-    right: 0px;
+    right: 165px;
+    top: 108px;
+    bottom: 108px;
     z-index: -1;
-    /* height: 100vh; */
+    /* position: 735px 1219px; */
   }
 
   .header-line {
@@ -73,7 +69,6 @@ body {
   }
   
   .container {
-  
     padding: 25px;
     display: flex;
     align-items: center;
@@ -96,6 +91,7 @@ body {
     font-weight: bold;
   }
 
+  
   .btn {
     text-align: center;
     margin-left: 530px;
@@ -122,10 +118,9 @@ body {
     color: #505F98;
     border: 3px solid #505f98;
     background-color: white
-
   }
 
-  /* HEADER */
+  /* -------------------------------  HEADER  ------------------------------- */
 
   .header-down {
     padding-left: 230px;
@@ -137,11 +132,10 @@ body {
     font-weight: bold;
     color: #505F98;
     text-align: left
-
   }
 
   .sub-desc {
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     font-size: 20px;
     font-weight: 300;
     color: #505F98;
@@ -177,8 +171,35 @@ body {
     border: 3px solid #505f98;
     background-color: white
   }
-
   
 
-
+/* -------------------------------  SECOND SECTION  ------------------------------- */
   
+
+.header-down2 {
+  padding-left: 230px;
+  padding-top: 160px
+}
+
+.desc2 {
+
+  font-size: 50px;
+  font-weight: bold;
+  color: #505F98;
+  text-align: left
+
+}
+
+.sub-desc2 {
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #505F98;
+  /* text-align: left */
+}
+
+.cards {
+  display: flex;
+  column-gap: 30px;
+
+}
