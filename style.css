@@ -44,6 +44,7 @@ a {
 
 .header {
   width: 100%;
+  padding-top: 21px;
   
   position: abosolute;
   top: 0;
