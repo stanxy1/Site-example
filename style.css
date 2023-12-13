@@ -134,6 +134,9 @@ p {
   height: 40rem;
 }
 
+img{
+  padding: 10px;
+}
 
 .header__picture__inner {
   background-origin: content-box;
