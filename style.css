@@ -27,9 +27,6 @@ a {
   transition: all 0.2s linear;
 }
 
-.header {
-  padding-bottom: 1rem;
-}
 
 .header__inner {
   display: flex;
@@ -69,16 +66,19 @@ a {
 }
 
 .header {
+  padding-bottom: 1rem;
   width: 100%;
   padding-top: 21px;
   background-color: white;
   
-  position: abosolute;
+  position: absolute;
   top: 0;
   left: 0;  
   right: 0;
-  z-index: 100px;
+  z-index: 100;
 }
+
+
 
 .nav {
   text-transform: uppercase;
@@ -134,8 +134,8 @@ p {
   height: 40rem;
 }
 
-img{
-  padding: 10px;
+.img {
+  padding-right: 160px;
 }
 
 .header__picture__inner {
