@@ -75,10 +75,7 @@ a {
   padding-top: 21px;
   background-color: white;
   
-  position: absolute;
-  top: 0;
-  left: 0;  
-  right: 0;
+  position: sticky;
   z-index: 100;
 }
 
@@ -215,4 +212,21 @@ p {
 
 p2 {
   text-align: center;
+}
+
+
+/* stiky header */
+
+.scroll-down .header__inner {
+  transform: translate3d(0, -100%, 0);
+}
+
+
+.scroll-up .header__innerr {
+  transform: none;
+}
+
+.scroll-up:not(.menu-open) .header__inner {
+  background: var(--lightpurple);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
