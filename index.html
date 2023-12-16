@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
           
@@ -30,7 +30,7 @@
             <a class="nav__items" href="#">Pricing</a>
             <a class="nav__items" href="#">Home</a>
 
-            <button class="btn">Button</button>
+            <button class="btn">Register Now  <i class="fa-solid fa-arrow-right"></i></button>
 
           </nav>
           
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <section class="info">
+    <section class="info__right">
 
       <div class="container">
 
@@ -135,7 +135,44 @@
       </div>
 
     </section>
-    <script src="app.js"></script>
+
+    <section class="section__4">
+      <div class="container">
+        <div class="info-wrapper-right">
+        
+
+
+          <div class="text__wrapper__right">
+            <h3 class="mini__title__right">The unseen of spending three <br> years at Pixelgrade</h3>
+            <p class="desc__right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed <br>accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed <br>porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam <br> quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            <button class="btn">Button</button>
+          </div>
+
+          <div class="img__wrapper">
+            <img src="img/Frame 35.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- <script src="app.js"></script> -->
+
+    <script type="text/javascript">
+      let lastScrollTop = 0;
+  header = document.getElementById('header');
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      header.style.top = '-80px';
+    } else {
+      header.style.top = '0';
+    }
+    lastScrollTop = scrollTop;
+  });
+    </script>
 
 </body>
 </html>

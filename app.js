@@ -4,34 +4,16 @@ function MyFunction(    ){
     alert("SERKAN GAY");
 }
 
-const body = document.body;
-const triggerMenu = document.querySelector(".page-header .");
-const nav = document.querySelector(".header .container");
-const menu = document.querySelector(".header .menu");
-const scrollUp = "scroll-up";
-const scrollDown = "scroll-down";
-let lastScroll = 0;
+let lastScrollTop = 0;
+header = document.getElementById('header');
+window.addEventListener('scroll', function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    header.style.top = '-80px';
+  } else {
+    header.style.top = '0';
+  }
+  lastScrollTop = scrollTop;
+});
 
-window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll <= 0) {
-      body.classList.remove(scrollUp);
-      return;
-    }
-  
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-      // down
-      body.classList.remove(scrollUp);
-      body.classList.add(scrollDown);
-      lottiePlayer.play();
-    } else if (
-      currentScroll < lastScroll &&
-      body.classList.contains(scrollDown)
-    ) {
-      // up
-      body.classList.remove(scrollDown);
-      body.classList.add(scrollUp);
-      lottiePlayer.stop();
-    }
-    lastScroll = currentScroll;
-  });
+
