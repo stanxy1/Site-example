@@ -1,8 +1,8 @@
-object.onclick = function(){MyFunction}
+// object.onclick = function(){MyFunction}
 
-function MyFunction(    ){
-    alert("SERKAN GAY");
-}
+// function MyFunction(    ){
+//     alert("SERKAN GAY");
+// }
 
 let lastScrollTop = 0;
 header = document.getElementById('header');
