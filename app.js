@@ -9,7 +9,7 @@ header = document.getElementById('header');
 window.addEventListener('scroll', function() {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
-    header.style.top = '-80px';
+    header.style.top = '-70px';
   } else {
     header.style.top = '0';
   }
