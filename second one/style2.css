@@ -1,0 +1,21 @@
+body {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+p {
+    padding-bottom: 1.5rem;
+  
+}
