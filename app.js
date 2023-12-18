@@ -17,3 +17,8 @@ window.addEventListener('scroll', function() {
 });
 
 
+
+function replace() {
+  window.location.href = "second-one/index2.html";
+}
+

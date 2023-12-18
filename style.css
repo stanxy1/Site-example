@@ -228,7 +228,7 @@ p2 {
 
 .section__4 {
   padding-top: 5rem;
-  height: 40rem;
+  height: 30rem;
 }
 
 
@@ -239,10 +239,9 @@ p2 {
   
 }
 .serkan__wrapper{
-  display: flex;
-  justify-content: center;
-  size: 50px;
-  
+  position: absolute;
+  top: 50%;
+  left: 42%;
 }
 .btn2 {
   /* box-sizing: content-box; */
@@ -268,4 +267,9 @@ p2 {
 
 .btn2:active {
   background-color: rgb(134, 134, 134)
+}
+
+.section__5 {
+  height: 40rem;
+  position: relative;
 }
