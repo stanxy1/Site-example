@@ -228,7 +228,7 @@ p2 {
 
 .section__4 {
   padding-top: 5rem;
-  height: 30rem;
+  height: 20rem;
 }
 
 
@@ -272,4 +272,27 @@ p2 {
 .section__5 {
   height: 40rem;
   position: relative;
+}
+
+
+/* FOTTER */
+
+.fotter {
+  background-color: #121212;
+}
+
+.author__name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fa-telegram {
+  color: white;
+  size: 25px;
+}
+
+.fa-instagram {
+  color: white;
+  size: 25px;
 }
