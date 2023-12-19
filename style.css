@@ -296,3 +296,36 @@ p2 {
   color: white;
   size: 25px;
 }
+
+/* .btn__top__wrapper {
+  position: relative;
+  z-index: 99;
+} */
+
+.btn__top {
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 9999;
+  position: fixed;
+  display: none;
+  text-align: center;
+  background-color: #4CAF4F;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  /* padding: 15px 35px; */
+  padding: 10px 20px;
+  /* cursor: pointer; */
+  font-size: 12px;
+  font-weight: bold;
+
+  transition: all 0.2s;
+}
+
+.btn__top:hover {
+  filter: brightness(120%);
+}
+
+.btn__top:active {
+  background-color: rgb(134, 134, 134)
+}
