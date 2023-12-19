@@ -1,7 +1,16 @@
-window.addEventListener("load", setTimeout(flashingScreen, 1));
+window.onload = 
 function flashingScreen(){
-    document.body.style.backgroundColor = "red";
-    //document.body.style.color = "white";
-    document.body.style.backgroundColor = "white";
-    //document.body.style.color = "red";
+    var body = $('body');
+var colors = ['black', 'white'];
+var currentIndex = 0;
+setInterval(function () {
+   body.css({
+     backgroundColor: colors[currentIndex]
+   });
+   if (!colors[currentIndex]) {
+       currentIndex = 0;
+   } else {
+       currentIndex++;
+   }
+}, 50);
 }
