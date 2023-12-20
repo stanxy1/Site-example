@@ -22,3 +22,22 @@ function replace() {
   window.location.href = "second-one/index2.html";
 }
 
+
+let btnTop = document.getElementById('btnTop');
+
+window.onscroll = function() {
+  topFuncrion();
+};
+
+function topFuncrion() {
+  if ( document.documentElement.scrollTop > 120) {
+    btnTop.style.opacity = "1";
+  } else {
+    btnTop.style.opacity = "0";
+  }
+}
+
+function toUp() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  // document.documentElement.scrollTop = 0;
+}
