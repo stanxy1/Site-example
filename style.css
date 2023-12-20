@@ -325,8 +325,26 @@ a2 {
 }
 
 .soc__holder {
-  align-items: center;
-  display: inline-block;
-  box-sizing: border-box;
+display: flex;
+align-items: center;
   /* align-items: center; */
+}
+
+p4 {
+  color: white;
+}
+
+p5 {
+  padding-left: 20px;
+}
+
+.soc__inst {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.soc {
+  padding-right: 20px;
+
 }
