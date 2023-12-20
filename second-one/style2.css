@@ -23,23 +23,11 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 } */
-.first_line,
-.second_line,
-.third_line,
-.fifth_line,
-.sixth_line,
-.seventh_line {
+.first_line {
   width: 13.3%;
   float: left;
   height: 100%;
   background-color: white;
-}
-.fourth_line{
-  width: 20%;
-  float: left;
-  height: 100%;
-  background-color: white ;
-  
 }
 
 p {
