@@ -1,11 +1,9 @@
 window.onload = function(){
-var dives = [$('.first_line'), $('.second_line'), $('.third_line'), $('.fourth_line'), $('.fifth_line'), $('.sixth_line'), $('.seventh_line')];
-var colors = ['red', 'orange', 'yellow', 'green', 'aqua', 'blue', 'purple'];
-var currentIndex = 0;
+let dives = [document.getElementById(1), document.getElementById(2), document.getElementById(3), document.getElementById(4), document.getElementById(5), document.getElementById(6), document.getElementById(7)];
+let colors = ['red', 'orange', 'yellow', 'green', 'aqua', 'blue', 'purple'];
+let currentIndex = 0;
 setInterval(function () {
-  dives[Math.floor(Math.random()*7)].css({
-     backgroundColor: colors[currentIndex]
-   });
+  dives[currentIndex].style.backgroundColor = colors[currentIndex]
    if (!colors[currentIndex]) {
        currentIndex = 0;
    } else {
