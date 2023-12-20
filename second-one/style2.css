@@ -1,25 +1,53 @@
+html{
+  height: 100%;
+}
 body {
     font-family: Merlin;
     font-size: 14px;
     line-height: 1.5;
     color: black;
-    transition: 5ms ease;
-  }
+    transition: 500ms ease;
+    height:100%;
+}
   
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-.wrapper {
+/* .wrapper {
     width: 100%;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
     max-width: 1000px;
     margin: 0 auto;
+} */
+.first_line,
+.second_line,
+.third_line,
+.fifth_line,
+.sixth_line,
+.seventh_line {
+  width: 13.3%;
+  float: left;
+  height: 100%;
+  background-color: white;
 }
-p {
-    padding-bottom: 1.5rem;
+.fourth_line{
+  width: 20%;
+  float: left;
+  height: 100%;
+  background-color: white ;
   
+}
+
+p {
+  font-family: Merlin;
+  color: black;
+  padding-top: 50%;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
 }

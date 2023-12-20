@@ -1,10 +1,9 @@
-window.onload = 
-function flashingScreen(){
-    var body = $('body');
-var colors = ['black', 'white'];
+window.onload = function(){
+var dives = [$('.first_line'), $('.second_line'), $('.third_line'), $('.fourth_line'), $('.fifth_line'), $('.sixth_line'), $('.seventh_line')];
+var colors = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'purple'];
 var currentIndex = 0;
 setInterval(function () {
-   body.css({
+  dives[Math.floor(Math.random()*7)].css({
      backgroundColor: colors[currentIndex]
    });
    if (!colors[currentIndex]) {
