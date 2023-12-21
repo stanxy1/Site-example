@@ -31,9 +31,9 @@ window.onscroll = function() {
 
 function topFuncrion() {
   if ( document.documentElement.scrollTop > 120) {
-    btnTop.style.opacity = "1";
+    btnTop.style.size = "1";
   } else {
-    btnTop.style.opacity = "0";
+    btnTop.style.size = "0";
   }
 }
 
