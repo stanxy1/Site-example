@@ -273,6 +273,7 @@ p2 {
 
 .fotter {
   background-color: #121212;
+  height: auto;
 }
 
 .fa-telegram {
@@ -325,13 +326,17 @@ a2 {
 }
 
 .footer__wrapper {
+  justify-content: center;
+  align-items: center;
   display: flex;
+  height: 10rem;
   /* justify-content: space-between; */
 }
 
 .fotter__title {
   color: white;
   text-align: center;
+  margin-right: 35px;
   font-size: 20px;
   font-weight: bold;
   display: flex;
