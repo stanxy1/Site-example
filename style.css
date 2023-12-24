@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: black;
+  margin: 0;
 }
 
 *,
@@ -223,7 +224,7 @@ p2 {
 
 .section__4 {
   padding-top: 5rem;
-  height: 20rem;
+  height: auto;
 }
 
 
@@ -276,21 +277,53 @@ p2 {
   height: auto;
 }
 
+
+/*                ICONS                  */
+
+
 .fa-telegram {
   color: white;
-  font-size: 35px
+  font-size: 40px;
+  transition: all ease-in-out 0.2s;
+  padding: 25px;
+}
+
+.fa-telegram:hover {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 .fa-instagram {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
+  transition: all ease-in-out 0.2s;
+  padding: 25px;
+}
+
+.fa-instagram:hover {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 .fa-github {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
+  transition: all ease-in-out 0.2s;
+  padding-left: 25px;
 }
 
+.fa-github:hover {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
+  transform: scaleX(1.2) scaleY(1.2);
+}
+
+.fa-grip-lines-vertical {
+  color: white;
+  font-size: 20px;
+
+}
+
+/*                ICONS                  */
 
 
 .btn__top {
@@ -306,7 +339,7 @@ p2 {
   padding: 10px 20px;
   font-size: 12px;
   font-weight: bold;
-  size: 0%;
+  size: 0;
 
   transition: all 0.2s;
 }
@@ -319,24 +352,18 @@ p2 {
   background-color: rgb(134, 134, 134)
 }
 
-a2 {
-  color: white;
-  font-size: 10px;
-  /* text-align: center; */
-}
-
 .footer__wrapper {
   justify-content: center;
   align-items: center;
   display: flex;
   height: 10rem;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .fotter__title {
   color: white;
   text-align: center;
-  margin-right: 35px;
+  /* margin-right: 35px; */
   font-size: 20px;
   font-weight: bold;
   display: flex;
@@ -344,9 +371,20 @@ a2 {
 
 .author__about {
   display: flex;
-  margin-right: 30px;
+  align-items: center;
 }
 
-.soc__icon {
-  padding-right: 35px;
+
+
+.circle {
+  transition: opacity 0.2s;
+  opacity: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: #4CAF4F;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
