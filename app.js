@@ -55,6 +55,9 @@ function animateCircles() {
     circle.style.top = y - 12 + "px";
     circle.style.opacity = "1";
 
+    if(!animationActive) {
+      circle.style.opacity = "0";
+    }
     
     circle.style.scale = (circles.length - index) / circles.length;
     
